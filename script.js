@@ -1,17 +1,17 @@
 document.querySelector("#add").onclick = function () {
   if (document.querySelector("#newtask input").value.length == 0) {
-    alert("Please enter a Task");
+    alert("Harap Isi Notes !");
   } else {
     document.querySelector("#tasks").innerHTML += `
 <div class="task">
     <label class="taskCheck">
         <input type="checkbox" class="taskCheckbox">
-        <span> id="taskname">
+        <span id="taskname">
             ${document.querySelector("#newtask input").value}
         </span>
     </label>
     <button class="delete">
-        <i> class="far fa-trash-alt"></i>
+        <i class="far fa-trash-alt"></i>
     </button>
 </div>
 `;
